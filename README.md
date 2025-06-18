@@ -1,16 +1,141 @@
-<<<<<<< HEAD
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Internship Task – Full Stack Authentication App
 
-Currently, two official plugins are available:
+This is a full-stack user authentication system built for the internship technical assessment at **PairUp Labs**. It includes both frontend (React + Tailwind CSS) and backend (Node.js + Express + MongoDB).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔗 Live URL (Optional)
+> [Add your deployed frontend/backend links here]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# internshipTask
->>>>>>> 2f25becdc39b2d6d25cadc99e6b8a820837f101f
+---
+
+project-root/
+│
+├── client/                 # React Frontend
+│   ├── public/
+│   ├── src/
+│   │   ├── pages/
+│   │   │   ├── Register.jsx
+│   │   │   ├── Login.jsx
+│   │   │   └── Home.jsx
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   └── package.json
+│
+├── server/                 # Node.js Backend
+│   ├── models/
+│   │   └── user.js
+│   ├── .env
+│   ├── server.js
+│   └── package.json
+│
+└── README.md
+
+
+
+---
+
+
+---
+
+## 🚀 Features
+
+- ✅ User registration with hashed password
+- ✅ Secure login using JWT
+- ✅ Stores auth token and name in `localStorage`
+- ✅ Protected home page
+- ✅ TailwindCSS styled UI
+- ✅ MongoDB Atlas or local MongoDB supported
+
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend**: React, React Router, Tailwind CSS, Axios
+- **Backend**: Node.js, Express, MongoDB, Mongoose, Bcrypt, JWT
+- **Dev Tools**: Vite, Nodemon, dotenv
+
+---
+
+## 🔧 Backend Setup
+
+1. Go to the server directory:
+
+```bash
+cd server
+Install backend dependencies:
+
+bash
+Copy
+Edit
+npm install
+Create a .env file in the server/ directory:
+
+env
+Copy
+Edit
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=yourSuperSecretKey
+Start the server:
+
+bash
+Copy
+Edit
+npm run dev
+# or
+node server.js
+Your backend will run at: http://localhost:5000
+
+
+###💻 Frontend Setup
+Go to the client directory:
+
+bash
+Copy
+Edit
+cd client
+Install frontend dependencies:
+
+bash
+Copy
+Edit
+npm install
+Start the React app:
+
+bash
+Copy
+Edit
+npm run dev
+The frontend will be available at: http://localhost:5173
+
+✅ How It Works
+Register Page: Sends user data to /register endpoint. On success, redirects to login page.
+
+Login Page: Sends credentials to /login, stores the token and name in localStorage, and redirects to /home.
+
+Home Page: Welcomes the logged-in user and provides a logout button.
+
+📦 API Routes
+Method	Endpoint	Description
+POST	/register	Register a new user
+POST	/login	Login existing user
+
+🛠️ Improvements to Add
+Password confirmation field in registration form
+
+JWT token validation middleware to protect routes
+
+Forgot password and email verification features
+
+User profile page and backend validation
+
+📸 Screenshots
+(Optional) Add screenshots like this:
+
+md
+Copy
+Edit
+![Login Page](screenshots/login.png)
+![Register Page](screenshots/register.png)
