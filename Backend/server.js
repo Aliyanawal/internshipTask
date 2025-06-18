@@ -2,18 +2,28 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const User = require('./models/User');
-require('dotenv').config(); 
+const cors = require('cors'); // ✅ CORS added
+const User = require('./models/user');
+require('dotenv').config();
 
 const app = express();
-app.use(express.json()); 
+app.use(express.json());
+app.use(cors()); // ✅ Allow frontend to connect
 
+// ✅ Health check route
+app.get('/', (req, res) => {
+  res.send('API is running...');
+});
 
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log('✅ MongoDB connected'))
-  .catch(err => console.error('❌ MongoDB connection error:', err));
+// ✅ MongoDB connection
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log('✅ MongoDB connected'))
+.catch(err => console.error('❌ MongoDB connection error:', err));
 
-
+// ✅ Register Route
 app.post('/register', async (req, res) => {
   const { name, email, password } = req.body;
 
@@ -27,11 +37,12 @@ app.post('/register', async (req, res) => {
 
     res.status(201).json({ message: 'User registered successfully' });
   } catch (err) {
+    console.error('Registration error:', err);
     res.status(500).json({ message: 'Error registering user' });
   }
 });
 
-
+// ✅ Login Route
 app.post('/login', async (req, res) => {
   const { email, password } = req.body;
 
@@ -48,10 +59,10 @@ app.post('/login', async (req, res) => {
 
     res.status(200).json({ token, name: user.name });
   } catch (err) {
+    console.error('Login error:', err);
     res.status(500).json({ message: 'Login failed' });
   }
 });
 
-
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(` Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
