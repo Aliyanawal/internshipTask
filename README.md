@@ -1,3 +1,7 @@
+![Screenshot 2025-06-18 133454](https://github.com/user-attachments/assets/2a4a2303-9d18-41dc-a486-a07d8778cbe6)
+![Screenshot 2025-06-18 133441](https://github.com/user-attachments/assets/3034ab6d-e786-415f-9886-55ab7820fc91)
+![Screenshot 2025-06-18 133415](https://github.com/user-attachments/assets/2e533894-0678-4062-8373-7861550af98f)
+![Screenshot 2025-06-18 133336](https://github.com/user-attachments/assets/02fd8607-19df-465a-b8f0-124d2634a5c9)
 
 # Internship Task – Full Stack Authentication App
 
