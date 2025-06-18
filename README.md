@@ -76,8 +76,10 @@ Create a .env file in the server/ directory:
 env
 Copy
 Edit
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=yourSuperSecretKey
+PORT=5000
+MONGO_URI=mongodb+srv://aliyanawal:Aliya%4020@cluster0.kgrnwit.mongodb.net/internship_auth?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=your_jwt_secret_here
+
 Start the server:
 
 bash
