@@ -1,15 +1,17 @@
-import { useState } from 'react'
-
-
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-purple-600 text-white text-4xl font-bold">
-      Tailwind is working! 🎉
-    </div>
+    <Routes>
+      <Route path="/" element={<Register />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/home" element={<Home />} />
+    </Routes>
   );
 }
 
 export default App;
-
-
