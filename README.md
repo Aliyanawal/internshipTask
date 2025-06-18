@@ -51,33 +51,7 @@ project-root/
 
 ---
 
-## ⚙️ Tech Stack
 
-- **Frontend**: React, React Router, Tailwind CSS, Axios
-- **Backend**: Node.js, Express, MongoDB, Mongoose, Bcrypt, JWT
-- **Dev Tools**: Vite, Nodemon, dotenv
-
----
-✅ How It Works
-Register Page: Sends user data to /register endpoint. On success, redirects to login page.
-
-Login Page: Sends credentials to /login, stores the token and name in localStorage, and redirects to /home.
-
-Home Page: Welcomes the logged-in user and provides a logout button.
-
-📦 API Routes
-Method	Endpoint	Description
-POST	/register	Register a new user
-POST	/login	Login existing user
-
-🛠️ Improvements to Add
-Password confirmation field in registration form
-
-JWT token validation middleware to protect routes
-
-Forgot password and email verification features
-
-User profile page and backend validation
 
 
 
@@ -109,12 +83,13 @@ npm run dev
 # or
 node server.js
 Your backend will run at: http://localhost:5000
+```
 
 
 ###💻 Frontend Setup
 Go to the client directory:
 
-bash
+```bash
 Copy
 Edit
 cd client
@@ -131,5 +106,33 @@ Copy
 Edit
 npm run dev
 The frontend will be available at: http://localhost:5173
+```
+## ⚙️ Tech Stack
+
+- **Frontend**: React, React Router, Tailwind CSS, Axios
+- **Backend**: Node.js, Express, MongoDB, Mongoose, Bcrypt, JWT
+- **Dev Tools**: Vite, Nodemon, dotenv
+
+---
+✅ How It Works
+Register Page: Sends user data to /register endpoint. On success, redirects to login page.
+
+Login Page: Sends credentials to /login, stores the token and name in localStorage, and redirects to /home.
+
+Home Page: Welcomes the logged-in user and provides a logout button.
+
+📦 API Routes
+Method	Endpoint	Description
+POST	/register	Register a new user
+POST	/login	Login existing user
+
+🛠️ Improvements to Add
+Password confirmation field in registration form
+
+JWT token validation middleware to protect routes
+
+Forgot password and email verification features
+
+User profile page and backend validation
 
 
