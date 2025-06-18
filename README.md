@@ -1,8 +1,8 @@
-![Screenshot 2025-06-18 135702](https://github.com/user-attachments/assets/fa34c470-1bd3-4c51-a20f-ed28e0d234b2)
-![Screenshot 2025-06-18 133454](https://github.com/user-attachments/assets/2a4a2303-9d18-41dc-a486-a07d8778cbe6)
-![Screenshot 2025-06-18 133441](https://github.com/user-attachments/assets/3034ab6d-e786-415f-9886-55ab7820fc91)
-![Screenshot 2025-06-18 133415](https://github.com/user-attachments/assets/2e533894-0678-4062-8373-7861550af98f)
-![Screenshot 2025-06-18 133336](https://github.com/user-attachments/assets/02fd8607-19df-465a-b8f0-124d2634a5c9)
+![Screenshot 2025-06-18 161323](https://github.com/user-attachments/assets/425776a0-ee24-44d5-a097-330346c8db0b)
+![Screenshot (82)](https://github.com/user-attachments/assets/b27aa52f-4c68-4d90-b577-6278c7332109)
+![Screenshot 2025-06-18 161403](https://github.com/user-attachments/assets/f109993b-0f68-4d76-a795-ffd44202137d)
+![Screenshot 2025-06-18 161413](https://github.com/user-attachments/assets/8178efe3-03a0-48b7-bb07-a825846681b8)
+
 
 # Internship Task – Full Stack Authentication App
 
